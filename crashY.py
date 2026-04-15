@@ -139,9 +139,9 @@ if __name__ == "__main__":
     dico["ID #"] = ID
     #ID added to the global dictionary
     
-    new_code = input("Would you like to start a code (yes/no)? ")
+    new_code = input("Would you like to start a code (yes/no)? ").lower()
     print()
-    while new_code == "yes" or new_code == "YES" or new_code == "Yes":
+    while new_code == "yes":
         entries_list = [] # this list will hold the inputted characters
         times_list = [] # this list will hold the time elapsed between the beginning of the session and the end
         duration_list = [] # this list holds the interval of time a code has been kept
@@ -173,21 +173,15 @@ if __name__ == "__main__":
         dico[t2] = total_duration_list[1]
         dico[t3] = total_duration_list[2] 
         
-        """code_sorter_helper("".join(entries_list))# This calls the function that gives the frequency
-        
-        display_entries_helper()
-        """
-        
         trial_num +=1
-        new_code = input("Type 'yes' to continue coding: ")
+        new_code = input("Type 'yes' to continue coding or 'display' to display the current trial's stats: ").lower()
         print()
         if new_code == "display":
             displayer()   
-            new_code = input("Type 'yes' to continue coding: ")
+            new_code = input("\nType 'yes' to continue coding: ").lower()
             print()
             
             
-    
     print("**END**\n")
 
     display_dico_helper(dico)
