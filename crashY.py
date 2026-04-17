@@ -164,7 +164,7 @@ if __name__ == "__main__":
         end_time = time.perf_counter()
         
         times_list.append(round(end_time - start_time, 2))
-        entries_list.append("-1")
+        entries_list.append("f")
         time_interval_helper()
         total_time_helper()
         # entries_lists, time_lists, duration_lists, and total_duration_lists are populated
