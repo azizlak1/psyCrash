@@ -6,10 +6,16 @@ README
 
     The program runs by successive "Sessions" storing 
     keyboard inputs and their time, then outputting 
-    them as a 2-rows table. The number of sessions is 
-    typically 4, but this number does not limit the program, 
-    more or less sessions can be coded as long as 
-    the user does not exit the program.
+    them as a 2-rows table. During a session, the user must 
+    enter a string of valid inputs (1, 2, or 3), WITHOUT SEPARATING 
+    THEM BY "ENTER", then, when they are done with the current trial, 
+    hit the key "enter" to end the session. After a session ends, 
+    the user is prompted to continue or stop the program, or to display 
+    the current stats. When the user decides to end the program, 
+    the 2-row table of all Trials' codes are displayed. The number 
+    of sessions is typically 4, but this number does not limit the program, 
+    more or less sessions can be coded as long as the user does not exit 
+    the program.
 
     Important Note: Once typed, entries can not be deleted.
     For this reason, invalid codes (other than 1, 2, or 3) 
