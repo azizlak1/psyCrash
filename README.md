@@ -7,7 +7,7 @@ README
     The program runs by successive "Sessions" storing 
     keyboard inputs and their time, then outputting 
     them as a 2-rows table. During a session, the user must 
-    enter a string of valid inputs (1, 2, or 3), WITHOUT SEPARATING 
+    enter a string of valid inputs (1, 2, 3, or 4), WITHOUT SEPARATING 
     THEM BY "ENTER", then, when they are done with the current trial, 
     hit the key "enter" to end the session. After a session ends, 
     the user is prompted to continue or stop the program, or to display 
@@ -18,11 +18,11 @@ README
     the program.
 
     Important Note: Once typed, entries can not be deleted.
-    For this reason, invalid codes (other than 1, 2, or 3) 
-    are not recorded nor their time. However, valid codes (1, 2, or 3),
+    For this reason, invalid codes (other than 1, 2, 3, or 4) 
+    are not recorded nor their time. However, valid codes (1, 2, 3, or 4),
     even if misplaced, can not be removed afterwards. 
-    For example, entering a 4 instead of a 3 will not 
-    impact the data collection, as 4 is an invalid entry, 
+    For example, entering a 5 instead of a 3 will not 
+    impact the data collection, as 5 is an invalid entry, 
     so the program will ignore it; but entering a 2 instead 
     of a 3 WILL store the 2 and its time, and take it into 
     acoount for the computations, because 2 is valid. The 

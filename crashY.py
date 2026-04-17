@@ -13,7 +13,7 @@ def key_logger_helper(key):
         char = key.char
         elapsed = time.perf_counter() - start_time
         
-        if (char == "1" or char == "2" or char == "3") and (len(entries_list)==0 or entries_list[-1] != char):#input validation / the next key must be different from the previous
+        if (char == "1" or char == "2" or char == "3" or char == "4") and (len(entries_list)==0 or entries_list[-1] != char):#input validation / the next key must be different from the previous
             entries_list.append(char)
             times_list.append(round(elapsed,2))
     except:
@@ -30,6 +30,7 @@ def code_sorter_helper(number_string):
     coded1 = 0
     coded2 = 0
     coded3 = 0
+    coded4 = 0
     
     for num in number_string:
         if num == "1":
@@ -38,14 +39,16 @@ def code_sorter_helper(number_string):
             coded2 += 1
         elif num == "3":
             coded3 += 1
+        elif num == "4":
+            coded4 +=1
 
     print("===FREQUENCY===")
-    print(f"The number of valid characters is {(coded1+coded2+coded3)}.")
+    print(f"The number of valid characters is {(coded1+coded2+coded3+coded4)}.")
             
-    print("Number of 1 (Looks at the reward) --->", coded1)
-    print("Number of 2 (Looks at self, bell, experimenter, table) --->", coded2)
-    print("Number of 3 (Looks away or Head turned or body turned) --->", coded3, "\n")
-    
+    print("Number of 1 --->", coded1)
+    print("Number of 2 --->", coded2)
+    print("Number of 3 --->", coded3)
+    print("Number of 4 --->", coded4, "\n")
 
 def time_interval_helper():
     """ 
@@ -68,6 +71,7 @@ def total_time_helper():
     tot1 = 0
     tot2 = 0
     tot3 = 0
+    tot4 = 0
     
     for i in range(len(entries_list)):
         if entries_list[i] == "1":
@@ -76,10 +80,13 @@ def total_time_helper():
             tot2 += duration_list[i]
         elif entries_list[i] == "3":
             tot3 += duration_list[i]
+        elif entries_list[i] == "4":
+            tot4 += duration_list[i]
 
     total_duration_list.append(round(tot1,2))
     total_duration_list.append(round(tot2,2))
     total_duration_list.append(round(tot3,2))
+    total_duration_list.append(round(tot4,2))
             
 
 def display_entries_helper():
@@ -168,10 +175,12 @@ if __name__ == "__main__":
         t1 = t+ "Code1"
         t2 = t+ "Code2"
         t3 = t+ "Code3"
+        t4 = t+ "Code4"
         
         dico[t1] = total_duration_list[0]
         dico[t2] = total_duration_list[1]
         dico[t3] = total_duration_list[2] 
+        dico[t4] = total_duration_list[3] 
         
         trial_num +=1
         new_code = input("Type 'yes' to continue coding or 'display' to display the current trial's stats: ").lower()
