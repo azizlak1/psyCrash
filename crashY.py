@@ -45,10 +45,10 @@ def code_sorter_helper(number_string):
     print("===FREQUENCY===")
     print(f"The number of valid characters is {(coded1+coded2+coded3+coded4)}.")
             
-    print("Number of 1 --->", coded1)
-    print("Number of 2 --->", coded2)
-    print("Number of 3 --->", coded3)
-    print("Number of 4 --->", coded4, "\n")
+    print("Number of 1 (Looks the reward) --->", coded1)
+    print("Number of 2 (Looks at self, bell, table) --->", coded2)
+    print("Number of 3 (Looks at experimenter (face)) --->", coded3)
+    print("Number of 4 (Looks away)--->", coded4, "\n")
 
 def time_interval_helper():
     """ 
@@ -112,7 +112,7 @@ def display_dico_helper(dic0):
         if(key == "ID #"): #Displays the ID in a smaller width for space 
             print(f"{key:<5}", end=" ")
         else:
-            print(f"{key:<12}", end=" ")
+            print(f"{key:<7}", end=" ")
         
     print() #line break to start the values at the next line
     
@@ -120,7 +120,7 @@ def display_dico_helper(dic0):
         if(key == "ID #"):
             print(f"{dic0[key]:<5}", end=" ")
         else:
-            print(f"{dic0[key]:<12}", end=" ")
+            print(f"{dic0[key]:<7}", end=" ")
 
 def displayer():
     """ 
@@ -171,11 +171,11 @@ if __name__ == "__main__":
         
         print(f"Total duration of the session: {times_list[-1]}s\n")
         
-        t = "Trial"+str(trial_num) # will give the smth like "Trial1" or "Trial2" etc...
-        t1 = t+ "Code1"
-        t2 = t+ "Code2"
-        t3 = t+ "Code3"
-        t4 = t+ "Code4"
+        t = "Tr"+str(trial_num)
+        t1 = t+ "Cd1"
+        t2 = t+ "Cd2"
+        t3 = t+ "Cd3"
+        t4 = t+ "Cd4"
         
         dico[t1] = total_duration_list[0]
         dico[t2] = total_duration_list[1]
