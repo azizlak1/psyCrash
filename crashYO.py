@@ -164,7 +164,7 @@ if __name__ == "__main__":
     choice = int(input(prompt))
 
     while choice!=7:
-        if choice == 1:
+        if choice == 1: # code
             list0 = [] # this list will hold the inputted characters
             list1 = [] # this list will hold the time elapsed between the beginning of the session and the end
             list2 = [] # this list holds the interval of time a code has been kept
@@ -202,7 +202,7 @@ if __name__ == "__main__":
             choice = int(input(prompt))
             
         
-        elif choice == 2:
+        elif choice == 2: #comment
             if not comm:
                 comm = input("Insert your comment below.\n")
             else:
@@ -214,12 +214,12 @@ if __name__ == "__main__":
             choice = int(input(prompt))
             
             
-        elif choice == 3:
+        elif choice == 3: #display
             displayer()   
             choice = int(input(prompt))
             
             
-        elif choice == 4:
+        elif choice == 4: #delete
             trial_num -=1
             
             tn = "Tr"+ str(trial_num)
@@ -231,7 +231,7 @@ if __name__ == "__main__":
             choice = int(input(prompt))
             
             
-        elif choice == 5:
+        elif choice == 5: #save
             #Add the current data to the .csv file
             try:
                 f = open("data-temp.csv", "x")
@@ -261,7 +261,7 @@ if __name__ == "__main__":
             choice = int(input(prompt))
             
             
-        elif choice == 6:
+        elif choice == 6: #clear
             try:
                 f = open("data-temp.csv", "x")
             except FileExistsError: # if file already exists,
@@ -277,7 +277,7 @@ if __name__ == "__main__":
             choice = int(input(prompt))
             
         else:
-            print("Please delect a number between 1 and 7")
+            print("Please select a number between 1 and 7")
             choice = int(input(prompt))
                     
     print("**END**\n")
