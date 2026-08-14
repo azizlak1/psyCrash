@@ -72,3 +72,7 @@ README
         I understand that typing commands in a terminal is not the funniest thing 
         for absolute strangers to programming, but crashYO.py will save you 
         a lot of time if you take some to type those small commands.
+
+        Also, because the program will create two new files, data-temp.csv, 
+        and table-temp.xlsx, I would advise to create a folder that contains 
+        crashYO.py, so that you know where those newly created files are.
