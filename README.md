@@ -32,7 +32,7 @@ README
         So, be careful!
 
 
-    INSTALL
+    INSTALL (crashY.py)
         The library pynput is used for this project to track 
         the keyboard. It should be installed using, in a terminal, 
         the command:
@@ -59,10 +59,11 @@ README
         into an excel file.
         Through the program, the user can comment on a trial, and delete the content 
         of the .csv file if needed.
-        Besides those changes, crashYO.py works exactly like crashY.py, so see README.md 
-        to know how the program works.
+        Besides those changes, crashYO.py works exactly like crashY.py, so read 
+        the CRASHY.PY and INSTALL (crashY.py) section to know how the program works 
+        and install the base version first.
 
-    INSTALL
+    INSTALL (crashYO.py)
         I used two other library for the handling of data into .csv and .xlsx files.
         They are panda and openpyxl. They can be installed with the commands
 
